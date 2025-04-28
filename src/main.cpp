@@ -106,6 +106,8 @@ int main(int argc, char *argv[])
 
         return 0;
     }
+
+    if(config.flag != 'd') return 1;
     
     // Decode
     std::ifstream ifs(config.input_file_location, std::ios::binary | std::ios::in);
